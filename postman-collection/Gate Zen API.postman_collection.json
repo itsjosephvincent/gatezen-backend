@@ -1,0 +1,4102 @@
+{
+	"info": {
+		"_postman_id": "6aa86ec0-d724-4698-b8b6-7d62a8435e4f",
+		"name": "Gate Zen API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22865801"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Store Category",
+					"item": [
+						{
+							"name": "Store Category List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "75|7VKue8DbF0MZROrvs44Z3w2MXCTOtHAbYbFb0ISQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-categories/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-categories",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Store Category By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "75|7VKue8DbF0MZROrvs44Z3w2MXCTOtHAbYbFb0ISQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-categories/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-categories",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store Category List Without Pagination",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "75|7VKue8DbF0MZROrvs44Z3w2MXCTOtHAbYbFb0ISQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/all-store-categories",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"all-store-categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store Category",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-categories/9?name=Joseph Watches&is_active=0",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-categories",
+										"9"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Joseph Watches"
+										},
+										{
+											"key": "is_active",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Admin List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/controls",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"controls"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create New Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/controls/?first_name=James&last_name=Bond&birthdate=1994-08-18&gender=male&email=james.bond@gmail.com&password=password",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"controls",
+										""
+									],
+									"query": [
+										{
+											"key": "first_name",
+											"value": "James"
+										},
+										{
+											"key": "last_name",
+											"value": "Bond"
+										},
+										{
+											"key": "birthdate",
+											"value": "1994-08-18"
+										},
+										{
+											"key": "gender",
+											"value": "male"
+										},
+										{
+											"key": "email",
+											"value": "james.bond@gmail.com"
+										},
+										{
+											"key": "password",
+											"value": "password"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Admin By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/controls/6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"controls",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/controls/6?first_name=Jane&last_name=Doe&birthdate=1993-11-16&gender=female&email=jane.doe@gmail.com",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"controls",
+										"6"
+									],
+									"query": [
+										{
+											"key": "first_name",
+											"value": "Jane"
+										},
+										{
+											"key": "last_name",
+											"value": "Doe"
+										},
+										{
+											"key": "birthdate",
+											"value": "1993-11-16"
+										},
+										{
+											"key": "gender",
+											"value": "female"
+										},
+										{
+											"key": "email",
+											"value": "jane.doe@gmail.com"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Admin Status",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/controls/6/update-status?is_active=0",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"controls",
+										"6",
+										"update-status"
+									],
+									"query": [
+										{
+											"key": "is_active",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Admin Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/controls/6/update-password?password=newpassword",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"controls",
+										"6",
+										"update-password"
+									],
+									"query": [
+										{
+											"key": "password",
+											"value": "newpassword"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Country",
+					"item": [
+						{
+							"name": "Country List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/all-countries",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"all-countries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "Customer List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/customers",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"customers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Customer By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/customers/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"customers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer Orders By Customer Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/customers/1/orders",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"customers",
+										"1",
+										"orders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customer",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/customers/1/?first_name=Will&last_name=Smith&email=will.smith@gmail.com&mobile=09987654321",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"customers",
+										"1",
+										""
+									],
+									"query": [
+										{
+											"key": "first_name",
+											"value": "Will"
+										},
+										{
+											"key": "last_name",
+											"value": "Smith"
+										},
+										{
+											"key": "email",
+											"value": "will.smith@gmail.com"
+										},
+										{
+											"key": "mobile",
+											"value": "09987654321"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customer Status",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/customers/1/update-status?is_active=0&=&=&=",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"customers",
+										"1",
+										"update-status"
+									],
+									"query": [
+										{
+											"key": "is_active",
+											"value": "0"
+										},
+										{
+											"key": "",
+											"value": ""
+										},
+										{
+											"key": "",
+											"value": ""
+										},
+										{
+											"key": "",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customer Address",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/customers/1/update-address?address_1=Chanel St.&address_2=&city=Zamboanga City&postal_code=88550&country_id=4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"customers",
+										"1",
+										"update-address"
+									],
+									"query": [
+										{
+											"key": "address_1",
+											"value": "Chanel St."
+										},
+										{
+											"key": "address_2",
+											"value": ""
+										},
+										{
+											"key": "city",
+											"value": "Zamboanga City"
+										},
+										{
+											"key": "postal_code",
+											"value": "88550"
+										},
+										{
+											"key": "country_id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customer Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/customers/1/update-password?password=newpassword",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"customers",
+										"1",
+										"update-password"
+									],
+									"query": [
+										{
+											"key": "password",
+											"value": "newpassword"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Disable Customer 2FA",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/customers/1/disable-2fa",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"customers",
+										"1",
+										"disable-2fa"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dashboard",
+					"item": [
+						{
+							"name": "Dashboard",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/dashboard",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"dashboard"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Log",
+					"item": [
+						{
+							"name": "Log List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/logs",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"logs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Product List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create New Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/?store_category_id=1&name=Test Product&description=Test&price=100.00&retail_price=119.00&wholesale_price=90.00&status=pending",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										""
+									],
+									"query": [
+										{
+											"key": "store_category_id",
+											"value": "1"
+										},
+										{
+											"key": "name",
+											"value": "Test Product"
+										},
+										{
+											"key": "description",
+											"value": "Test"
+										},
+										{
+											"key": "price",
+											"value": "100.00"
+										},
+										{
+											"key": "retail_price",
+											"value": "119.00"
+										},
+										{
+											"key": "wholesale_price",
+											"value": "90.00"
+										},
+										{
+											"key": "status",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/1?store_category_id=1&name=Update Test&description=Update Test Description&price=200.00&retail_price=210.00&wholesale_price=190.00&status=pending",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"1"
+									],
+									"query": [
+										{
+											"key": "store_category_id",
+											"value": "1"
+										},
+										{
+											"key": "name",
+											"value": "Update Test"
+										},
+										{
+											"key": "description",
+											"value": "Update Test Description"
+										},
+										{
+											"key": "price",
+											"value": "200.00"
+										},
+										{
+											"key": "retail_price",
+											"value": "210.00"
+										},
+										{
+											"key": "wholesale_price",
+											"value": "190.00"
+										},
+										{
+											"key": "status",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product Inventory",
+					"item": [
+						{
+							"name": "Product Inventory List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/1/inventory",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"1",
+										"inventory"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product Media",
+					"item": [
+						{
+							"name": "Get Product Media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/1/medias",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"1",
+										"medias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Product Media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "product_id",
+											"value": "133",
+											"type": "default"
+										},
+										{
+											"key": "name",
+											"value": "Test Product",
+											"type": "default"
+										},
+										{
+											"key": "media_url",
+											"type": "file",
+											"src": "/home/jayvee/Pictures/Screenshots/Screenshot from 2022-08-01 19-25-51.png"
+										},
+										{
+											"key": "is_featured",
+											"value": "0",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/medias?product_id=101&name=anon shi&media_url=&is_featured=0",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"medias"
+									],
+									"query": [
+										{
+											"key": "product_id",
+											"value": "101"
+										},
+										{
+											"key": "name",
+											"value": "anon shi"
+										},
+										{
+											"key": "media_url",
+											"value": ""
+										},
+										{
+											"key": "is_featured",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Product Media By Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "product_id",
+											"value": "133",
+											"type": "default"
+										},
+										{
+											"key": "name",
+											"value": "Test Product",
+											"type": "default"
+										},
+										{
+											"key": "media_url",
+											"type": "file",
+											"src": "/home/jayvee/Pictures/Screenshots/Screenshot from 2022-08-01 19-25-51.png"
+										},
+										{
+											"key": "is_featured",
+											"value": "0",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/medias/111",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"medias",
+										"111"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Product Media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Test Product",
+											"type": "default"
+										},
+										{
+											"key": "media_url",
+											"type": "file",
+											"src": "/home/jayvee/Pictures/Screenshots/Screenshot from 2022-08-04 11-44-26.png"
+										},
+										{
+											"key": "is_featured",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/medias/111",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"medias",
+										"111"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Product Media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Test Product",
+											"type": "default"
+										},
+										{
+											"key": "media_url",
+											"type": "file",
+											"src": "/home/jayvee/Pictures/Screenshots/Screenshot from 2022-08-04 11-44-26.png"
+										},
+										{
+											"key": "is_featured",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/medias/111",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"medias",
+										"111"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sales",
+					"item": [
+						{
+							"name": "Sales List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/sales/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"sales",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sales By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/sales/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"sales",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sales By Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/products/1/sales",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"1",
+										"sales"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"item": [
+						{
+							"name": "Store List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/stores",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"stores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/stores/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"stores",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store Per User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-users/1/stores",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-users",
+										"1",
+										"stores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/stores/1?is_private=0&is_wholesaler=0&status=active&store_category_id=1&store_name=Joseph Store",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"stores",
+										"1"
+									],
+									"query": [
+										{
+											"key": "is_private",
+											"value": "0"
+										},
+										{
+											"key": "is_wholesaler",
+											"value": "0"
+										},
+										{
+											"key": "status",
+											"value": "active"
+										},
+										{
+											"key": "store_category_id",
+											"value": "1"
+										},
+										{
+											"key": "store_name",
+											"value": "Joseph Store"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store Template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/stores/1/template-version",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"stores",
+										"1",
+										"template-version"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store Orders",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/stores/1/sales",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"stores",
+										"1",
+										"sales"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store Logs",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/stores/1/logs",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"stores",
+										"1",
+										"logs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Store Template",
+					"item": [
+						{
+							"name": "Store Template List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-templates",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-templates"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store Template By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-templates/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-templates",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store Template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-templates/1?store_category_id=2&name=New Template&description=New Updated Template&is_active=1&repo_url=https://www.google.com&version=1.2.",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-templates",
+										"1"
+									],
+									"query": [
+										{
+											"key": "store_category_id",
+											"value": "2"
+										},
+										{
+											"key": "name",
+											"value": "New Template"
+										},
+										{
+											"key": "description",
+											"value": "New Updated Template"
+										},
+										{
+											"key": "is_active",
+											"value": "1"
+										},
+										{
+											"key": "repo_url",
+											"value": "https://www.google.com"
+										},
+										{
+											"key": "version",
+											"value": "1.2."
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store Template Image",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image_url",
+											"type": "file",
+											"src": "/home/jayvee/Pictures/Screenshots/Screenshot from 2022-08-19 13-25-36.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-templates/1/update-template-image?image_url",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-templates",
+										"1",
+										"update-template-image"
+									],
+									"query": [
+										{
+											"key": "image_url",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Store User",
+					"item": [
+						{
+							"name": "Store User List",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Store User By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-users/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-users",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-users/1?first_name=Joseph&last_name=Vincent&email=josephvincent@gmail.com&mobile=09987654321&birthdate=1994-08-18&name=Tarynex&description=Sed doloremque inventore ex asperiores impedit sit nemo a. ex ex ex.",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-users",
+										"1"
+									],
+									"query": [
+										{
+											"key": "first_name",
+											"value": "Joseph"
+										},
+										{
+											"key": "last_name",
+											"value": "Vincent"
+										},
+										{
+											"key": "email",
+											"value": "josephvincent@gmail.com"
+										},
+										{
+											"key": "mobile",
+											"value": "09987654321"
+										},
+										{
+											"key": "birthdate",
+											"value": "1994-08-18"
+										},
+										{
+											"key": "name",
+											"value": "Tarynex"
+										},
+										{
+											"key": "description",
+											"value": "Sed doloremque inventore ex asperiores impedit sit nemo a. ex ex ex."
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store User Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-users/1/update-password?password=newpassword",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-users",
+										"1",
+										"update-password"
+									],
+									"query": [
+										{
+											"key": "password",
+											"value": "newpassword"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Disable Store User Two Factor Authentication",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/store-users/1/disable-2fa",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"store-users",
+										"1",
+										"disable-2fa"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/auth/login?email=kklocko20220725120039@kemmer.net&password=newpassword",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "kklocko20220725120039@kemmer.net"
+										},
+										{
+											"key": "password",
+											"value": "newpassword"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72|LtpMsu32eMJZOMnK0dZqblOc4uglKsr6jJFaxXnX",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/logout",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/auth/login?email=boehm.aileen20220725120039@wiegand.biz&password=password",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "boehm.aileen20220725120039@wiegand.biz"
+										},
+										{
+											"key": "password",
+											"value": "password"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "73|Rn8shUM94orTEEIwVR29wBLB4qvNrFfj3A3Ff7Bl",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/logout",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/auth/login?email=rachel0820220725120039@abbott.biz&password=password",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "rachel0820220725120039@abbott.biz"
+										},
+										{
+											"key": "password",
+											"value": "password"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "74|t6YYjIBelPsN8LKGxhd9nXwIrDb0o4mfQhpzZX1k",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/logout",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Payment",
+					"item": [
+						{
+							"name": "Checkout with Stripe",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "88|BxrZcnik4ildHY5rByLvvcqpG7EkZ9gFku3ESk8z",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/checkout/stripe?cancel_url=http://watch-store.gatezen-test.com&success_url=http://watch-store.gatezen-test.com/checkout/payment-success?checkout_session_id={CHECKOUT_SESSION_ID}",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"checkout",
+										"stripe"
+									],
+									"query": [
+										{
+											"key": "cancel_url",
+											"value": "http://watch-store.gatezen-test.com"
+										},
+										{
+											"key": "success_url",
+											"value": "http://watch-store.gatezen-test.com/checkout/payment-success?checkout_session_id={CHECKOUT_SESSION_ID}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check Payment Session",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "88|BxrZcnik4ildHY5rByLvvcqpG7EkZ9gFku3ESk8z",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/checkout/payment/?address_type=Home&checkout_session_id=cs_test_b1gO4zspQpqCIZMxd4jhfLvKyGsfWQZHUbJ0QPNXDBlXCBmeyjTKbAQMPT&payment_method=Stripe",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"checkout",
+										"payment",
+										""
+									],
+									"query": [
+										{
+											"key": "address_type",
+											"value": "Home"
+										},
+										{
+											"key": "checkout_session_id",
+											"value": "cs_test_b1gO4zspQpqCIZMxd4jhfLvKyGsfWQZHUbJ0QPNXDBlXCBmeyjTKbAQMPT"
+										},
+										{
+											"key": "payment_method",
+											"value": "Stripe"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Payment Method List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/checkout/payment-methods",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"checkout",
+										"payment-methods"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cart",
+					"item": [
+						{
+							"name": "Cart List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/cart",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"cart"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Item To Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/cart?product_id=89&quantity=10",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"cart"
+									],
+									"query": [
+										{
+											"key": "product_id",
+											"value": "89"
+										},
+										{
+											"key": "quantity",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cart By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/cart/35",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"cart",
+										"35"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Cart Item Quantity",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/cart/35?quantity=100",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"cart",
+										"35"
+									],
+									"query": [
+										{
+											"key": "quantity",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Cart Item",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/cart/35",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"cart",
+										"35"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Country",
+					"item": [
+						{
+							"name": "Country List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/countries",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"countries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer Address",
+					"item": [
+						{
+							"name": "Customer Address List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/customer-address",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"customer-address"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Customer Address",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/customer-address?address_type=Home&address_1=Boulevard St.&city=Davao City&postal_code=8000&country_id=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"customer-address"
+									],
+									"query": [
+										{
+											"key": "address_type",
+											"value": "Home"
+										},
+										{
+											"key": "address_1",
+											"value": "Boulevard St."
+										},
+										{
+											"key": "city",
+											"value": "Davao City"
+										},
+										{
+											"key": "postal_code",
+											"value": "8000"
+										},
+										{
+											"key": "country_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer Address By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/customer-address/11",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"customer-address",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customer Address",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "104|dCDqwVxLLUydcuOsHB0e88R5a0AwMv6G76YeFbqA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/customer-address/1/?address_1=Calinan St.&city=Panabo City&postal_code=8001&country_id=2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"customer-address",
+										"1",
+										""
+									],
+									"query": [
+										{
+											"key": "address_1",
+											"value": "Calinan St."
+										},
+										{
+											"key": "city",
+											"value": "Panabo City"
+										},
+										{
+											"key": "postal_code",
+											"value": "8001"
+										},
+										{
+											"key": "country_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Product List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/products/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"products",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Product By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/customer/products/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"customer",
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Address",
+					"item": [
+						{
+							"name": "Address List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/address",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"address"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Address",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/address?entity_id=1&user_id=1&care_of&address_1=Test Address&address_2&city=Davao City&postal_code=8000&country_id=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"address"
+									],
+									"query": [
+										{
+											"key": "entity_id",
+											"value": "1"
+										},
+										{
+											"key": "user_id",
+											"value": "1"
+										},
+										{
+											"key": "care_of",
+											"value": null
+										},
+										{
+											"key": "address_1",
+											"value": "Test Address"
+										},
+										{
+											"key": "address_2",
+											"value": null
+										},
+										{
+											"key": "city",
+											"value": "Davao City"
+										},
+										{
+											"key": "postal_code",
+											"value": "8000"
+										},
+										{
+											"key": "country_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Address By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/address/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"address",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Address",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/address/1?entity_id=2&user_id=1&care_of&address_1=Updated Test Address&address_2&city=Panabo City&postal_code=8001&country_id=2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"address",
+										"1"
+									],
+									"query": [
+										{
+											"key": "entity_id",
+											"value": "2"
+										},
+										{
+											"key": "user_id",
+											"value": "1"
+										},
+										{
+											"key": "care_of",
+											"value": null
+										},
+										{
+											"key": "address_1",
+											"value": "Updated Test Address"
+										},
+										{
+											"key": "address_2",
+											"value": null
+										},
+										{
+											"key": "city",
+											"value": "Panabo City"
+										},
+										{
+											"key": "postal_code",
+											"value": "8001"
+										},
+										{
+											"key": "country_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Country",
+					"item": [
+						{
+							"name": "Country List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/all-countries",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"all-countries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "Customer List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/customers",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"customers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customers By Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/stores/1/customers",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"stores",
+										"1",
+										"customers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customers By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/customers/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"customers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer Orders",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/customers/1/orders",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"customers",
+										"1",
+										"orders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/customers/1?first_name=Updated Customer&last_name=Smith&email=updateadcustomer.smith@gmail.com&mobile=09987654321",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"customers",
+										"1"
+									],
+									"query": [
+										{
+											"key": "first_name",
+											"value": "Updated Customer"
+										},
+										{
+											"key": "last_name",
+											"value": "Smith"
+										},
+										{
+											"key": "email",
+											"value": "updateadcustomer.smith@gmail.com"
+										},
+										{
+											"key": "mobile",
+											"value": "09987654321"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customer Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/customers/1/update-password?password=newpassword",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"customers",
+										"1",
+										"update-password"
+									],
+									"query": [
+										{
+											"key": "password",
+											"value": "newpassword"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customer Status",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/customers/1/update-status?is_active=0",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"customers",
+										"1",
+										"update-status"
+									],
+									"query": [
+										{
+											"key": "is_active",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Disable Customer Two Auth Factor",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/customers/1/disable-2fa",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"customers",
+										"1",
+										"disable-2fa"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dashboard",
+					"item": [
+						{
+							"name": "Dashboard",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/dashboard",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"dashboard"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Log",
+					"item": [
+						{
+							"name": "Log List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/logs",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"logs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "Order List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/sales",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"sales"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sales By Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/stores/1/sales",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"stores",
+										"1",
+										"sales"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sales By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/sales/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"sales",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Store Category",
+					"item": [
+						{
+							"name": "Store Category List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/all-store-categories",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"all-store-categories"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"item": [
+						{
+							"name": "Store List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/stores",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"stores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/stores?template_id=1&store_category_id=2&url=secret&store_name=Secret Store",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"stores"
+									],
+									"query": [
+										{
+											"key": "template_id",
+											"value": "1"
+										},
+										{
+											"key": "store_category_id",
+											"value": "2"
+										},
+										{
+											"key": "url",
+											"value": "secret"
+										},
+										{
+											"key": "store_name",
+											"value": "Secret Store"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/stores/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"stores",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/stores/1?store_name=Secret&is_private=0",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"stores",
+										"1"
+									],
+									"query": [
+										{
+											"key": "store_name",
+											"value": "Secret"
+										},
+										{
+											"key": "is_private",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Store Template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/stores/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"stores",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Store Template",
+					"item": [
+						{
+							"name": "Store Template By Store Id",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Store Template By Store Category Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "71|kZQT4N07pqHJVYfnvI5XVUj1a967mEhZ3aVCs2g4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/templates/store-category-templates/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"templates",
+										"store-category-templates",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
